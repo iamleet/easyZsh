@@ -105,7 +105,7 @@ installZsh()
 {
   brew install zsh zsh-completions ||   echo "$time - Installing zsh failed via Brew" >> ./logs/$logFile
   echo "$time - Installing zsh successful via Brew..." >> ./logs/$logFile
-  $ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"  ||   echo "$time - Installing ohmyzsh failed via curl" >> ./logs/$logFile
+  sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"  ||   echo "$time - Installing ohmyzsh failed via curl" >> ./logs/$logFile
   echo "$time - Installing ohmyzsh successful via curl..." >> ./logs/$logFile
 }
 
